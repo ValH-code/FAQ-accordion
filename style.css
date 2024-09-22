@@ -1,0 +1,82 @@
+:root {
+--White: hsl(0, 0%, 100%);
+--Lightpink: hsl(275, 100%, 97%);
+--Grayishpurple: hsl(292, 16%, 49%);
+--Darkpurple: hsl(292, 42%, 14%);
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Work Sans Bold";
+  src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans";
+  background-image: url(/assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Lightpink);
+}
+
+main {
+  background-color: var(--White);
+  margin: 180px 32px 0 32px;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.faq {
+  display: flex;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--White);
+  color: var(--Darkpurple);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  transition: 0.4s;
+}
+
+.acc-plus {
+  display: block;
+}
+
+.acc-minus {
+  display: none;
+}
+
+.accordion {
+  background-color: var(--White);
+  color: var(--Darkpurple);
+  text-align: left;
+  font-family: "Work Sans Bold";
+  font-size: 24px;
+}
+
+.active, .accordion:hover {
+  color: var(--Grayishpurple);
+}
+
+.answer {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+p {
+  font-size: 16px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
